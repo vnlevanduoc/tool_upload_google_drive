@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
     <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Dapper.2.0.30\lib\net461\Dapper.dll</HintPath>
     </Reference>
@@ -54,6 +57,12 @@
     <Reference Include="Google.Apis.PlatformServices, Version=1.41.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Apis.1.41.1\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
     </Reference>
+    <Reference Include="MimeMapping, Version=1.0.1.17, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MimeMapping.1.0.1.17\lib\netstandard2.0\MimeMapping.dll</HintPath>
+    </Reference>
+    <Reference Include="MimeTypesMap, Version=1.0.8.0, Culture=neutral, PublicKeyToken=1b320cc08ad5aa89, processorArchitecture=MSIL">
+      <HintPath>..\packages\MimeTypesMap.1.0.8\lib\net452\MimeTypesMap.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -62,6 +71,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />

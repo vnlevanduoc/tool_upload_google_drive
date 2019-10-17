@@ -25,3 +25,7 @@ E:\duoclv\Github\tool_upload_google_drive\google_drive\google_drive\obj\Debug\go
 E:\duoclv\Github\tool_upload_google_drive\google_drive\google_drive\obj\Debug\google_drive.exe
 E:\duoclv\Github\tool_upload_google_drive\google_drive\google_drive\obj\Debug\google_drive.pdb
 E:\duoclv\Github\tool_upload_google_drive\google_drive\google_drive\obj\Debug\google_drive.csprojAssemblyReference.cache
+E:\duoclv\Github\tool_upload_google_drive\google_drive\google_drive\bin\Debug\MimeMapping.dll
+E:\duoclv\Github\tool_upload_google_drive\google_drive\google_drive\bin\Debug\MimeMapping.xml
+E:\duoclv\Github\tool_upload_google_drive\google_drive\google_drive\bin\Debug\BouncyCastle.Crypto.dll
+E:\duoclv\Github\tool_upload_google_drive\google_drive\google_drive\bin\Debug\MimeTypesMap.dll

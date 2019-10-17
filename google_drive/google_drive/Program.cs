@@ -1,15 +1,12 @@
 ﻿using Google.Apis.Auth.OAuth2;
 using Google.Apis.Drive.v3;
-using Google.Apis.Drive.v3.Data;
 using Google.Apis.Services;
 using Google.Apis.Util.Store;
+using HeyRed.Mime;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace google_drive
 {
@@ -45,12 +42,15 @@ namespace google_drive
                 ApplicationName = ApplicationName,
             });
 
+            //Upload file
+            UploadFile(service);
+
+
             // Define parameters of request.
             FilesResource.ListRequest listRequest = service.Files.List();
             listRequest.PageSize = 10;
-            listRequest.Fields = "nextPageToken, files(id, name)";
-            listRequest.Q = "mimeType = 'application/vnd.google-apps.folder'";
-            listRequest.f
+            //listRequest.Fields = "nextPageToken, files(id, name)";
+            listRequest.Q = "parents in '0BzG-111t2JvxRXByR1F2eDJQV00', '1xoC_xjV9Rn7z3qrgPbCaJYPHwJTaPKns'";
 
             // List files.
             IList<Google.Apis.Drive.v3.Data.File> files = listRequest.Execute().Files;
@@ -68,6 +68,25 @@ namespace google_drive
             }
             Console.Read();
 
+        }
+
+        private static void UploadFile(DriveService driveService)
+        {
+            var fileMetadata = new Google.Apis.Drive.v3.Data.File()
+            {
+                Name = "GiaoTrinh.rar"
+            };
+            FilesResource.CreateMediaUpload request;
+            using (var stream = new FileStream("C:\\Users\\duocl\\OneDrive\\Desktop\\GiaoTrinh.rar", FileMode.Open))
+            {
+                var mimeType = MimeTypesMap.GetMimeType(fileMetadata.Name);
+
+                request = driveService.Files.Create(fileMetadata, stream, mimeType);
+                request.Fields = "id";
+                request.Upload();
+            }
+            var file = request.ResponseBody;
+            Console.WriteLine("File ID: " + file.Id);
         }
     }
 }
