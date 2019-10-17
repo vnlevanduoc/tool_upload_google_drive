@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29411.108
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "google_drive", "google_drive\google_drive.csproj", "{4D81F6A1-D2E5-44FE-9040-70E0E0B3A5DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lib_google_drive", "lib_google_drive\lib_google_drive.csproj", "{3D2CA0B9-90DB-4757-B9C1-09ED2EBD11F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zitzac_tool_upload", "zitzac_tool_upload\zitzac_tool_upload.csproj", "{D7ADCC8E-F688-4EE0-81D6-C5D920AF74C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4D81F6A1-D2E5-44FE-9040-70E0E0B3A5DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D81F6A1-D2E5-44FE-9040-70E0E0B3A5DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D81F6A1-D2E5-44FE-9040-70E0E0B3A5DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4D81F6A1-D2E5-44FE-9040-70E0E0B3A5DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D2CA0B9-90DB-4757-B9C1-09ED2EBD11F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D2CA0B9-90DB-4757-B9C1-09ED2EBD11F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D2CA0B9-90DB-4757-B9C1-09ED2EBD11F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D2CA0B9-90DB-4757-B9C1-09ED2EBD11F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7ADCC8E-F688-4EE0-81D6-C5D920AF74C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7ADCC8E-F688-4EE0-81D6-C5D920AF74C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7ADCC8E-F688-4EE0-81D6-C5D920AF74C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7ADCC8E-F688-4EE0-81D6-C5D920AF74C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
